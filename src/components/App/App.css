@@ -1,0 +1,12 @@
+.App {
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+  text-align: left;
+  cursor: pointer;
+  padding: 24px;
+  display: grid;
+  grid-template-rows: 1fr 50px;
+  grid-gap: 12px;
+  flex-direction: column;
+  height: calc(100vh - 50px);
+}
+

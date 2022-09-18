@@ -1,0 +1,35 @@
+
+.Message-List-Container {
+    display: flex;
+    flex-direction: column-reverse;
+    overflow: auto;
+    height: 100%;
+    padding: 0 8px;
+}
+  
+.Message-Container {
+    display: grid;
+    grid-template-columns: 160px 1fr;
+    justify-content: flex-start;
+    align-items: flex-start;
+    grid-gap: 8px;
+    margin-bottom: 8px;
+}
+
+.timestamp {
+    color: orange;
+}
+
+.Message-Input {
+    padding: 12px;
+    border: 1px solid black;
+}
+
+.message-owner, .message {
+    margin-top: 0;
+    color: green
+}
+
+.Message-input {
+    padding: 0 8px;
+}
