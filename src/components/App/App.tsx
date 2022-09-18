@@ -4,7 +4,7 @@ import { messages } from '../Message/mock';
 import SendMessageForm from '../Message/SendMessageForm';
 import './App.css';
 
-const MessageListCopy = lazy(() => import('../Message/MessageList'));
+const MessageList = lazy(() => import('../Message/MessageList'));
 
 function App() {
   const [newMessage, setNewMessage] = useState<IMessage>({
@@ -25,7 +25,7 @@ function App() {
   return (
     <div className='App'>
       <Suspense fallback={<div>isLoading...</div>}>
-        <MessageListCopy messages={messages} newMessage={newMessage} />
+        <MessageList messages={messages} newMessage={newMessage} />
       </Suspense>
       <SendMessageForm handleSubmit={handleSubmit} />
     </div>

@@ -20,7 +20,7 @@ function SendMessageForm(props: {
     <input
       className='Message-input'
       type='textarea'
-      placeholder='Send your message...'
+      placeholder='TEXT TO APPEND...'
       value={value}
       onChange={handleChange}
       onKeyPress={(event) => {
